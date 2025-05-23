@@ -14,7 +14,7 @@ app.use(cors());
 app.use(express.json());
 
 // MongoDB Connection
-mongoose.connect(process.env.MONGODB_URI || 'mongodb+srv://ibrahimismael204:02230223@freedb.m6ozwka.mongodb.net/?retryWrites=true&w=majority&appName=FreeDB')
+mongoose.connect(process.env.MONGODB_URI || '')
   .then(() => {
     console.log('MongoDB Connected')
   }).catch(err => console.log('MongoDB Connection Error:', err));
